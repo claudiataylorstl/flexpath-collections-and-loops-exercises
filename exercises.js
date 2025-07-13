@@ -20,7 +20,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_11();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -39,7 +39,11 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let arr1 = [1,2,3,4,5];
+
+  console.log(arr1);
+
+  console.log(arr1.length);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -57,7 +61,9 @@ function exercise_02() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let arr1 = [1,2,3,4,5];
+
+  console.log(arr1[0],arr1[4]);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -76,7 +82,12 @@ function exercise_03() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let arr1 = [];
+
+  arr1.push(1,2,3,4,5);
+
+  console.log(arr1);
+  
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -95,8 +106,11 @@ function exercise_04() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let list = ["a","b","c","d","e"]
 
+  list.unshift(45);
+
+  console.log(list);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -115,7 +129,12 @@ function exercise_05() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+ let list = ["a","b","c","d","e"];
+
+ console.log(list.pop());
+
+ console.log(list);
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -134,7 +153,11 @@ function exercise_06() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let list = [1,2,3,4,5];
+
+  console.log(list.shift());
+
+  console.log(list);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -152,7 +175,13 @@ function exercise_07() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let list = [1,2,3,4,5,6,14,8,9,10];
+
+  if (list.includes(7)) {
+    console.log("Item is in the array!");
+  } else {
+    (console.log("Item is not in the array"))
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -177,7 +206,12 @@ function exercise_08() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  let four = numbers.indexOf(4);
+
+  console.log(numbers[four - 1]);
+  console.log(numbers[four + 1]);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -196,7 +230,11 @@ function exercise_09() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+   let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+   numbers.splice(1,1);
+
+   console.log(numbers);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -223,9 +261,22 @@ function exercise_10() {
   
   */
   // CODE IN THE OPEN LINES BELOW
+  let people = new Map([
+    ["name", "Claudia"],
+    ["age", 37],
+    ["job", "Lab Tech"],
+  ]);
 
-  const placeholder = "Delete this line and code in this space";
+  console.log(people);
 
+  let people2 = {
+    name: 'Claudia',
+    age: 37,
+    job: 'Lab Tech'
+  };
+  
+  console.log(people2);
+  
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -256,7 +307,13 @@ function exercise_11() {
    - The second element, the value of that key
   */
 
-  const placeholder = "Delete this line and code in this space";
+ let people = new Map([
+    ["name", "Claudia"],
+    ["age", 37],
+    ["job", "Lab Tech"],
+  ]);
+
+  console.log(`This person's name is ${people.get(`name`)}`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
