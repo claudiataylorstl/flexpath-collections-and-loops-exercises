@@ -24,3 +24,5 @@ function exercise_16() {
   }
   // CODE IN THE OPEN LINES ABOVE
 }
+
+exercise_16();

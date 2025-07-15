@@ -20,7 +20,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_11();
+  exercise_16();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -335,7 +335,15 @@ function exercise_12() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let people = new Map([
+    ["name", "Claudia"],
+    ["age", 37],
+    ["job", "Lab Tech"],
+  ]);
+
+  console.log(people,people.size);
+  people.delete("age");
+  console.log(people, people.size);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -370,10 +378,32 @@ function exercise_13() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let dogs = new Set();
+  dogs.add("louis");
+  dogs.add("bobo");
+  dogs.add("kevin");
 
+
+  console.log(dogs,dogs.size);
+
+  const allHere = (dogs.has("louis") && dogs.has("bobo") && dogs.has("kevin"));
+
+  if (allHere) {
+    console.log("Everyone's there!!!!");
+  } else {
+    console.log("bummer, someones missing...");
+  }
+
+  dogs.delete("louis");
+  dogs.delete("kevin");
+  dogs.delete("bobo");
+
+  console.log("My set", dogs, "should have", dogs.size," dogs in it.");
+""
+
+  }
   // CODE IN THE OPEN LINES ABOVE
-}
+
 
 function exercise_14() {
   /* 
@@ -387,7 +417,9 @@ function exercise_14() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let i =  1;
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -407,8 +439,14 @@ function exercise_15() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let i = 29;
 
+  do {
+    i--
+    if(i % 7 == 0 || i % 4 == 0) {
+      console.log(i);
+    } 
+  } while(i > 1);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -428,10 +466,18 @@ function exercise_16() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  for (let i = 1; i <= 10; i++) {
+    if(i % 2 === 1) continue;
+    if(i = 8) break;
+    console.log(i);
+      
+    }
+    
+
+  }
 
   // CODE IN THE OPEN LINES ABOVE
-}
+
 
 function exercise_17() {
   // DONT edit the code below
